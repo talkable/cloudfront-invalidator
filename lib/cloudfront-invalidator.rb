@@ -131,7 +131,7 @@ class CloudfrontInvalidator
       #{keys.map{|k| "<Path>#{k}</Path>" }.join("\n    ")}
     </Items>
   </Paths>
-  <CallerReference>#{self.class.to_s} on #{Socket.gethostname} at #{Time.now.to_i}</CallerReference>"
+  <CallerReference>#{self.class.to_s} on #{Socket.gethostname} at #{Time.now.to_i}</CallerReference>
 </InvalidationBatch>
 XML
   end
